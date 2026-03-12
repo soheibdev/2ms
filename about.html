@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Starter</title>
+    <meta name="description" content="Learn more about Starter, our mission, vision, and the amazing team behind our success.">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .about-split {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        .mission-vision {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .team-card {
+            text-align: center;
+            padding: 2.5rem 1.5rem;
+        }
+        .team-card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 0 auto 1.5rem;
+            object-fit: cover;
+            border: 3px solid var(--color-primary);
+            padding: 3px;
+        }
+        .team-card h4 {
+            margin-bottom: 0.5rem;
+        }
+        .team-card span {
+            color: var(--color-primary);
+            font-size: 0.9rem;
+            display: block;
+            margin-bottom: 1rem;
+        }
+        .mv-icon {
+            font-size: 2.5rem;
+            color: var(--color-accent);
+            margin-bottom: 1.5rem;
+            display: inline-block;
+        }
+        @media (max-width: 768px) {
+            .about-split, .mission-vision {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"><i class="fa-solid fa-cube"></i></div>
+                2MS
+            </a>
+            
+            <button class="hamburger" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link active">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="section" style="padding-top: 8rem; padding-bottom: 2rem; text-align: center;">
+        <div class="container reveal">
+            <h1>About <span class="gradient-text">Starter</span></h1>
+            <p style="max-width: 600px; margin: 0 auto;">We are a team of passionate creators, engineers, and strategists dedicated to building the tools of tomorrow.</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="section">
+        <div class="container about-split reveal delay-1">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop" style="border-radius: var(--radius-lg);" alt="Team working together">
+            </div>
+            <div class="about-text">
+                <h2 style="font-size: 2rem;">Our Story</h2>
+                <p>Founded in 2026, Starter was built out of a simple necessity: navigating the modern digital landscape shouldn't be so complicated. Over the years, we've developed into a comprehensive suite of tools that empower businesses to operate effectively, scale rapidly, and manage data securely securely.</p>
+                <p>Our core philosophy centers on removing friction. We believe software should adapt to the people using it, not the other way around. Every interface we design, and every feature we implement is tested against this ideal.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="section">
+        <div class="container mission-vision">
+            <div class="glass-card reveal delay-1 text-center">
+                <div class="mv-icon"><i class="fa-solid fa-rocket"></i></div>
+                <h3>Our Mission</h3>
+                <p>To provide accessible, high-performance, and secure digital tools that empower teams to achieve their goals without technical constraints.</p>
+            </div>
+            <div class="glass-card reveal delay-2 text-center">
+                <div class="mv-icon"><i class="fa-solid fa-eye"></i></div>
+                <h3>Our Vision</h3>
+                <p>To become the global standard for enterprise collaboration and management software, known for unparalleled user experience and support.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="section">
+        <div class="container text-center reveal">
+            <h2>Meet The <span class="gradient-text">Team</span></h2>
+            <p style="max-width: 600px; margin: 0 auto;">The brilliant minds behind the Starter platform.</p>
+            
+            <div class="team-grid">
+                <!-- Team 1 -->
+                <div class="glass-card team-card reveal delay-1">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=256&auto=format&fit=crop" alt="Sarah Johnson">
+                    <h4>Sarah Johnson</h4>
+                    <span>Chief Executive Officer</span>
+                    <p style="font-size: 0.9rem;">Former CTO with 15+ years experience building SaaS applications.</p>
+                </div>
+                <!-- Team 2 -->
+                <div class="glass-card team-card reveal delay-2">
+                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=256&auto=format&fit=crop" alt="Michael Chen">
+                    <h4>Michael Chen</h4>
+                    <span>Head of Product</span>
+                    <p style="font-size: 0.9rem;">Obsessed with UI/UX and ensuring our tools solve real-world problems.</p>
+                </div>
+                <!-- Team 3 -->
+                <div class="glass-card team-card reveal delay-3">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=256&auto=format&fit=crop" alt="Emma Davis">
+                    <h4>Emma Davis</h4>
+                    <span>Lead Engineer</span>
+                    <p style="font-size: 0.9rem;">Architect of our core infrastructure and security protocols.</p>
+                </div>
+                <!-- Team 4 -->
+                <div class="glass-card team-card reveal delay-1">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=256&auto=format&fit=crop" alt="David Miller">
+                    <h4>David Miller</h4>
+                    <span>Marketing Director</span>
+                    <p style="font-size: 0.9rem;">Connecting our solutions with the teams that need them most.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon"><i class="fa-solid fa-cube"></i></div>
+                        2MS
+                    </a>
+                    <p>Delivering premium digital solutions and next-generation tools designed to scale your enterprise efficiently.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-dribbble"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links-col">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Newsroom</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links-col">
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Cloud Analytics</a></li>
+                        <li><a href="services.html">Security Audit</a></li>
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">Consulting</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links-col">
+                    <h4 class="footer-heading">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Starter Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

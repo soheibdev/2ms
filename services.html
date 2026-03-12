@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Starter</title>
+    <meta name="description" content="Discover Starter's powerful services including analytics, web development, security audits, and cloud consulting.">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .service-card {
+            padding: 3rem 2rem;
+            transition: var(--transition);
+        }
+        .service-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: inline-block;
+        }
+        .service-card h3 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        .cta-section {
+            background: linear-gradient(135deg, rgba(79, 140, 255, 0.1), rgba(168, 85, 247, 0.1));
+            border-radius: var(--radius-lg);
+            padding: 5rem 2rem;
+            margin-top: 5rem;
+            border: 1px solid var(--color-border);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"><i class="fa-solid fa-cube"></i></div>
+                2MS
+            </a>
+            
+            <button class="hamburger" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link active">Services</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="section" style="padding-top: 8rem; padding-bottom: 2rem; text-align: center;">
+        <div class="container reveal">
+            <h1>Our <span class="gradient-text">Services</span></h1>
+            <p style="max-width: 600px; margin: 0 auto;">Comprehensive, state-of-the-art solutions tailored to elevate your business's digital presence and operational efficiency.</p>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section class="section pt-0">
+        <div class="container">
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="glass-card service-card reveal delay-1">
+                    <div class="service-icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <h3>Data & Analytics</h3>
+                    <p>Unlock the power of your data with our advanced analytics dashboard. We provide real-time insights that drive strategic decision-making and forecasting.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="glass-card service-card reveal delay-2">
+                    <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+                    <h3>Web Development</h3>
+                    <p>Custom-built, performant web applications customized to your specific needs. From landing pages to complex corporate intranets using modern frameworks.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="glass-card service-card reveal delay-3">
+                    <div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>Security Audits</h3>
+                    <p>Comprehensive vulnerability assessments and penetration testing to ensure your digital assets are protected against the latest cybersecurity threats.</p>
+                </div>
+                <!-- Service 4 -->
+                <div class="glass-card service-card reveal delay-1">
+                    <div class="service-icon"><i class="fa-solid fa-cloud"></i></div>
+                    <h3>Cloud Consulting</h3>
+                    <p>Seamlessly migrate, optimize, and manage your infrastructure on major cloud platforms (AWS, GCP, Azure) to minimize downtime and costs.</p>
+                </div>
+                <!-- Service 5 -->
+                <div class="glass-card service-card reveal delay-2">
+                    <div class="service-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                    <h3>App Development</h3>
+                    <p>Native and cross-platform mobile application development that delivers stunning user experiences tailored to iOS and Android ecosystems.</p>
+                </div>
+                <!-- Service 6 -->
+                <div class="glass-card service-card reveal delay-3">
+                    <div class="service-icon"><i class="fa-solid fa-brain"></i></div>
+                    <h3>AI Integration</h3>
+                    <p>Leverage cutting-edge artificial intelligence and machine learning APIs into your existing workflows to automate tasks and serve customers better.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section pt-0 justify-content-center">
+        <div class="container">
+            <div class="cta-section reveal">
+                <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">Ready to upgrade your workflow?</h2>
+                <p style="font-size: 1.1rem; max-width: 600px; margin: 0 auto 2.5rem;">Join thousands of modern enterprises using Starter to streamline their operations and scale effectively into the future.</p>
+                <a href="contact.html" class="btn btn-primary" style="padding: 1rem 2.5rem; font-size: 1.1rem;">Talk to Sales</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon"><i class="fa-solid fa-cube"></i></div>
+                        2MS
+                    </a>
+                    <p>Delivering premium digital solutions and next-generation tools designed to scale your enterprise efficiently.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-dribbble"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links-col">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Newsroom</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links-col">
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Cloud Analytics</a></li>
+                        <li><a href="services.html">Security Audit</a></li>
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">Consulting</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links-col">
+                    <h4 class="footer-heading">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Starter Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
