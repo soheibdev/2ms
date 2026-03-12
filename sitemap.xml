@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<!-- for each page in the website, add a url entry with the loc tag containing the page URL -->
-<url>
-<loc>https://2msdev.netlify.app/</loc>
-</url>
 
+  <url>
+    <loc>https://2msdev.netlify.app/</loc>
+  </url>
 
-<url>
-<loc>https://2msdev.netlify.app/about</loc>
-</url>
+  <url>
+    <loc>https://2msdev.netlify.app/about</loc>
+  </url>
 
-<url>
-<loc>https://2msdev.netlify.app/services</loc>
-</url>
+  <url>
+    <loc>https://2msdev.netlify.app/services</loc>
+  </url>
 
-<url>
-<loc>https://2msdev.netlify.app/contact</loc>
-</url>
+  <url>
+    <loc>https://2msdev.netlify.app/contact</loc>
+  </url>
 
+</urlset>
